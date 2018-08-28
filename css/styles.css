@@ -1,0 +1,16 @@
+body, .title {
+  justify-content: center;
+  align-items: center; }
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw; }
+
+.title {
+  display: flex;
+  width: 100vw;
+  height: 400px;
+  background-image: linear-gradient(to right, dimgrey, cyan, lightpink, blueviolet, dimgrey); }
+  .title span {
+    color: white; }

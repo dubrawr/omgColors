@@ -1,0 +1,22 @@
+%center-hor-ver {
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	display: flex;
+	@extend %center-hor-ver;
+	height: 100vh;
+	width: 100vw;
+}
+
+.title {
+	display: flex;
+	@extend %center-hor-ver;
+	width: 100vw;
+	height: 400px;
+	background-image: linear-gradient(to right, dimgrey, cyan, lightpink, blueviolet, dimgrey);
+	span {
+		color: white;
+	}
+}
