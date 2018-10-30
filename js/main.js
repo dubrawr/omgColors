@@ -1,4 +1,4 @@
-let gamelist = [];
+let gamecolorlist = [];
 
 //need to make a key value object for each color
 //to choose the actual shade that I want...or maybe I can do that in scss...
@@ -13,16 +13,16 @@ const colors = [
   {name: "purple", color: "#dc7cff"}
 ];
 
-const colorGenerator = (colors) => {
-  while (gamelist.length < 30) {
+const generateColors = (colors) => {
+  while (gamecolorlist.length < 30) {
     let random = colors[Math.floor(Math.random() * colors.length)];
-    gamelist.push(random);
+    gamecolorlist.push(random);
   }
 };
 
-colorGenerator(colors);
+generateColors(colors); // TODO: delete this since it happens in gameStart()?
 console.log("lol");
-console.log(gamelist);
+console.log(gamecolorlist);
 
 
 // append li to gamelist
@@ -35,11 +35,11 @@ console.log(gamelist);
 //create gamelist and display
 
 const gameStart = () => {
-  colorGenerator(colors);
+  generateColors(colors);
   //hide title screen
   //game list display
 }
 
-list = gamelist.reduce((result, color) => {
+list = gamecolorlist.reduce((result, color) => {
   result += `<li style="color: ${color.color};">${color.name}</li>`
 });
