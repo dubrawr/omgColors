@@ -11,6 +11,9 @@ body {
   display: flex;
   width: 100vw;
   height: 400px;
-  background-image: linear-gradient(to right, dimgrey, cyan, lightpink, blueviolet, dimgrey); }
+  background-image: linear-gradient(to right, white, cyan, blueviolet, lightpink, white); }
   .title span {
     color: white; }
+
+.gameSession {
+  /*display: none;*/ }
